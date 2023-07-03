@@ -25,5 +25,5 @@ if (findQuarter != 0)
 {
     Console.WriteLine($"Точка принадлежит четверти {findQuarter}");
 }
-else Console.WriteLine("Введены неврные координаты");
+else Console.WriteLine("Введены неверные координаты");
 
