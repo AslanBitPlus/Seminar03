@@ -10,8 +10,7 @@ void TableSquar(int num)
     int count = 1;
     while (count <= num)
     {
-        Console.Write(count);
-        Console.WriteLine($"   {count * count}");
+        Console.WriteLine($"{count, 3}   {count * count, 5}");
         count ++;
     }
 
