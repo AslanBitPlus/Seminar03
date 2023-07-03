@@ -5,11 +5,7 @@
 // 2 -> 1, 4
 
 // =======================
-Console.WriteLine("Введите целое положительное число:");
-Console.Write("N = ");
-int num = Convert.ToInt32(Console.ReadLine());
-
-if (num > 0) 
+void TableSquar(int num)
 {
     int count = 1;
     while (count <= num)
@@ -18,8 +14,20 @@ if (num > 0)
         Console.WriteLine($"   {count * count}");
         count ++;
     }
+
+}
+
+
+
+
+
+
+Console.WriteLine("Введите целое положительное число:");
+Console.Write("N = ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number > 0) 
+{
+    TableSquar(number);
 }
 else Console.WriteLine("Ошибка ввода");
-
-
-// Square(num);
