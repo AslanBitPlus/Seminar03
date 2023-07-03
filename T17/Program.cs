@@ -9,7 +9,6 @@ int FindQuarter(int x, int y)
     else if (x < 0 && y > 0) result = 1;
     else if (x < 0 && y < 0) result = 2;
     else if (x > 0 && y < 0) result = 3;
-    else result = 0; 
     return result;
 }
 
