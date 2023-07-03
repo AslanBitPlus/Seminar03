@@ -28,4 +28,7 @@ int x2Coordinate = Convert.ToInt32(Console.ReadLine());
 Console.Write("Y2 = ");
 int y2Coordinate = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"Расстояние между точками равна {Distance(x1Coordinate, x2Coordinate, y1Coordinate, y2Coordinate)}");
+double res = Distance(x1Coordinate, x2Coordinate, y1Coordinate, y2Coordinate);
+double resRound = Math.Round(res, 2, MidpointRounding.ToZero);
+
+Console.WriteLine($"Расстояние между точками равна {resRound}");
