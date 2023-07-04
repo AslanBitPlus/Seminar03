@@ -34,7 +34,6 @@ int Polindrom(int x)
         {
             digit = x1 % 10;
             array[numeric - 1 - i] = digit;
-            // Console.Write($"{digit}");
             x1 = x1 / 10;
             i ++;
         }
@@ -62,8 +61,6 @@ int number = Convert.ToInt32(Console.ReadLine());
 if (number >= 0) 
 {
     int res = Polindrom(number);
-    // Polindrom(number);
-    // Console.WriteLine();
     if (res == 0) Console.WriteLine($"Число {number} является полиндромом");
     else Console.WriteLine($"Число {number} НЕ является полиндромом");
 }
